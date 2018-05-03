@@ -6,7 +6,7 @@ namespace IoTHubSender
 {
     public static class KeepAlive
     {
-        [FunctionName("Function2")]
+        [FunctionName("KeepAlive")]
         public static void Run([TimerTrigger("0 */1 * * * *")]TimerInfo myTimer, TraceWriter log)
         {
             log.Info($"C# Timer trigger function executed at: {DateTime.Now}");
